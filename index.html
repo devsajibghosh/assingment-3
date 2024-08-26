@@ -13,8 +13,10 @@
    <!-- link of DaisyUI + Tailwind css -->
    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
    <script src="https://cdn.tailwindcss.com"></script>
-  <!-- fontawsome cdn link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- google icon's link  -->
+  <link
+  href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+  rel="stylesheet">
    <!-- customize css -->
    <style>
     .manrope{
@@ -22,14 +24,78 @@
       /* font-weight: 100; */
     }
    </style>
+   <script>
+    tailwind.config = {
+    theme: {
+    extend: {
+      colors: {
+        'arrow-color': '#ABEF5F',
+      }
+    }
+  }
+}
+   </script>
 </head>
 <body class="manrope">
 
 <!-- header section  -->
+<header class="container md:container mx-auto bg-[#fff] mt-3">
+  <div class="navbar bg-base-100">
+    <div class="navbar-start gap-1">
+      <button class="bg-arrow-color w-8 h-8 rounded-full"><i class="material-icons-two-tone text-xl">north_east</i></button>
+      <h3 class="text-2xl font-extrabold">Rinterio</h3>
+    </div>
+    <div class="navbar-center hidden md:flex">
+      <ul class="flex gap-6">
+      <li><a class="text-sm">Home</a></li>
+      <li><a class="text-sm">Services</a></li>
+      <li><a class="text-sm">Portfolio</a></li>
+      <li><a class="text-sm">Blogs</a></li>
+      <li><a class="text-sm">Conact Us</a></li>
+    </ul>
+    </div>
+    <div class="navbar-end">
+      <div class="md:flex hidden gap-3 items-center">
+        <button class="bg-[#f1f1f1] w-8 h-8 rounded-full">
+          <i class="material-icons-two-tone text-2xl">search</i>
+        </button>
+        <button class="bg-[#f1f1f1] w-8 h-8 rounded-full">
+          <i class="material-icons-two-tone text-2xl">shopping_cart</i>
+        </button>
+        <div class="flex items-center bg-arrow-color px-4 py-2 gap-1 rounded-full">
+          <h3 class="text-sm font-extrabold">Book Consult</h3>
+          <button class="bg-black w-6 h-6 rounded-full"><i class="material-icons-two-tone text-sm text-white">north_east</i></button>
+        </div>
+      </div>
+      <!-- mobile button -->
+      <div class="lg:hidden">
+        <button class="bg-arrow-color w-10 h-10 rounded-full"><i class="material-icons-two-tone text-xl text-white">menu</i></button>
+      </div>
+    </div>
+  </div>
 
-<header>
-  
+  <!-- hero section-->
+
+  <div class="text-center">
+    <div class="flex justify-center items-center">
+      <img src="./images/banner.png" alt="">
+    </div>
+    <h2 class="text-black lg:text-6xl text-lg font-extrabold  lg:font-extrabold mb-5 lg:px-4 px-8">A barn house of this design has a striking appearance</h2>
+    <p class="text-sm px-8 mb-2">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+    <div class="mb-4 inline-block">
+      <div class="flex items-center bg-[#ABEF5F]  px-4 py-2 gap-1 rounded-full">
+        <h3 class="text-xs font-extrabold">View Details</h3>
+        <button class="bg-[#beff75] w-6 h-6 rounded-full"><i class="material-icons-two-tone text-sm text-white">north_east</i></button>
+      </div>
+    </div>
+  </div>
 </header>
+
+
+
+
+
+
 
 
 
